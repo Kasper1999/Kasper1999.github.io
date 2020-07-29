@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Доступность динамических интерфейсов</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="showerStyles/styles.css">
+    <link rel="stylesheet" href="mystyles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+    </style>
+</head>
+
+<!-- activate dark mode - add .dark-mode -->
+
+<body class="shower list dark-mode">
+    <header class="caption">
+        <h1>Доступность динамических интерфейсов</h1>
+        <p>Александр Касперович, ISsoft</p>
+    </header>
+
+    <section class="slide flex" style="padding: 0;">
+        <img class="ava" src="pictures/me-k.jpg" alt="Александр Касперович">
+        <div class="main-inf">
+            <p>Александр Касперович</p>
+            <div class="is-logo">
+                <img  src="pictures/is.png" alt="is">
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="slide first" id="cover" style="padding: 0;">
+        <h1> Доступность динамических интерфейсов </h1>
+        <h2> React / Mobile / A11y Team</h2>
+    </section>
+
+    <section class="slide centered dis-slide a11y-desc">
+        <h1>Accessibility Club Minsk Meetup #1</h1>
+        <p>Захар Авсиевич</p>
+        <a href="https://www.youtube.com/watch?v=G74m6225RMQ&feature=youtu.be">
+            WCAG: Как разобраться и не умереть 
+        </a>
+    </section>
+
+    <section class="slide centered dis-slide a11y-desc">
+        <dl>
+            <dt class="">
+                WCAG
+                <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="universal-access"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor"
+                        d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 456c-114.953 0-208-93.029-208-208 0-114.953 93.029-208 208-208 114.953 0 208 93.029 208 208 0 114.953-93.029 208-208 208zm143.594-286.66c2.538 10.75-4.119 21.522-14.869 24.061-29.865 7.051-57.839 13.286-85.597 16.751.679 111.33 12.654 128.456 26.969 165.116 4.823 12.346-1.275 26.265-13.622 31.087-12.34 4.823-26.263-1.27-31.087-13.622-9.559-24.467-18.089-42.949-23.805-85.12h-3.164c-5.721 42.206-14.269 60.706-23.805 85.12-4.816 12.329-18.721 18.451-31.087 13.623-12.346-4.823-18.445-18.741-13.623-31.088 14.33-36.686 26.29-53.837 26.969-165.116-27.758-3.465-55.732-9.699-85.597-16.751-10.75-2.538-17.407-13.311-14.869-24.061 2.539-10.75 13.312-17.405 24.061-14.869 104.768 24.736 134.447 24.701 239.066 0 10.749-2.538 21.522 4.118 24.06 14.869zm-181.788-43.146C217.806 113.1 234.906 96 256 96s38.194 17.1 38.194 38.194-17.1 38.194-38.194 38.194-38.194-17.101-38.194-38.194z"
+                        class=""></path>
+                </svg>
+            </dt>
+            <dd>
+                Стандарт доступности содержимого, который регламентирует принципы построения доступных интерфейсов 
+                <p class="accent"> &nbsp; <b>Цель стандарта —</b> сделать содержимое интернета 
+                    доступным всем пользователям, в том числе пользователям с ограниченными возможностями.</p>
+            </dd>
+        </dl>
+    </section>
+
+    <section class="slide gallery-slide">
+        <img class="disabled-1 ui-gif" src="pictures/ui1.gif" alt="UI">
+        <img class="disabled-2 ui-gif" src="pictures/ui2.gif" alt="UI">
+        <img class="disabled-3 ui-gif" src="pictures/ui3.gif" alt="UI">
+        <img class="disabled-4 ui-gif" src="pictures/ui4.gif" alt="UI">
+        <img class="disabled-5 ui-gif" src="pictures/ui5.gif" alt="UI">
+        <img class="disabled-6 ui-gif" src="pictures/ui6.gif" alt="UI">
+    </section>
+
+    <section class="slide right-dl">
+        <img class="left-img" src="pictures/cros.gif" alt="cros">
+        <dl>
+            <dt>
+                Десктопные  
+            </dt>
+            <dd>
+                Electron / NW.js
+            </dd>
+            <dt style="color: #94cf5c">
+                Веб-приложения 
+            </dt>
+            <dd>
+                React / Vue / Angular
+            </dd>
+            <dt style="color: #ec766e">
+                Мобильные 
+            </dt>
+            <dd>
+                Cordova
+            </dd>
+        </dl>
+    </section>
+
+    <section class="slide full">
+        <img src="pictures/react-js-image.png" alt="React">
+    </section>
+
+    <section class="slide full">
+        <img src="pictures/react-comp.jpg" alt="React">
+        <div class="right-block">
+            <h2 style="margin: 6rem 0 0 2rem;">React  </h2>
+            <h2 style="margin: 0 0 0 4rem;">components</h2>
+            <div class="arrow-8"></div>
+            <h3>
+                 ARIA 
+            </h3>
+            <h4>
+                Accessible Rich Internet
+            </h4>
+            <h4>
+                Applications
+            </h4>
+        </div>       
+    </section>
+
+    <section class="slide flex no-full">
+        <article class="code-p">
+            <div class="code">
+                <code>
+                    // компонент верхнего уровня<br>
+                    &lt;div> <br>
+                    &nbsp;&lt;ul role="tablist"> <br>
+                    &nbsp; &nbsp;цикл ...<br>
+                    &nbsp;// компонент нижнего уровня<br>
+                    &nbsp; &nbsp; &nbsp;&lt;li role="tab"> <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp;&lt;button><br>
+                    &nbsp; &nbsp; &nbsp; &nbsp;...<br>
+                </code>
+            </div>
+            <p>Не работает на андройд  </p>
+        </article>
+        <article class="code-p">
+            <div class="code">
+                <code>
+                    // компонент верхнего уровня<br>
+                    &lt;div> <br>
+                    &nbsp;&lt;ul role="tablist"> <br>
+                    &nbsp; &nbsp;цикл ...<br>
+                    &nbsp;// компонент нижнего уровня<br>
+                    &nbsp; &nbsp; &nbsp;&lt;li> <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp;&lt;button role="tab"><br>
+                    &nbsp; &nbsp; &nbsp; &nbsp;...<br>
+                </code>
+            </div>
+            <p>Не работает на IOS </p>
+        </article>
+    </section>
+
+    <section class="slide flex no-full">
+        <article class="code-p">
+            <div class="code">
+                <code>
+                    // компонент верхнего уровня<br>
+                    &lt;div role="tablist"> <br>
+                    &nbsp; цикл ...<br>
+                    &nbsp;// компонент нижнего уровня<br>
+                    &nbsp; &nbsp; &lt;button role="tab"><br>
+                    &nbsp; &nbsp; &nbsp; ...<br>
+                </code>
+            </div>
+            <p>Универсальное решение </p>
+        </article>
+        <article class="code-p left-border">
+            <h1>Избегайте большого числа нефункциональных оберток</h1>
+            <div class="flex-code" style="width: 100%; height: 50%;">
+                <div class="red-b"></div>
+                <div class="yellow-b"></div>
+                <div class="green-b"></div>
+            </div>  
+        </article>
+    </section>
+
+    <section class="slide centered-v dis-slide">
+        <dl>
+            <dt>
+                Специфические баги <img src="pictures/bug.png"/>
+            </dt>
+            <dd>
+                Часто баги связанны с работой программного обеспечения конечного устройства, 
+                особенностями программ для доступности такими как <span class="accent">VoiceOver</span> 
+                на IOS и с технологиями используемыми разработчиками, например 
+                <span class="accent">Cordova</span>  – следовательно возникают баги, которые 
+                воспроизводятся лишь на конечном устройстве.
+            </dd>
+        </dl>
+    </section>
+    
+    <section class="slide full">
+        <img src="pictures/tester.jpeg" alt="">
+    </section>
+
+    <section class="slide full right-dl">
+        <img style="height: 100%; margin: 0;" src="pictures/dang.jpg" alt="dangerous">
+        <dl class="with-block" style="margin-top: 8%;">
+            <dt>
+                &lt;iframe>   
+            </dt>
+            <dd style="margin-bottom: 15%;">
+                <ul>
+                    <li>Cложность взаимодействия с содержимым </li>
+                    <li>Проблемы с субтитрами </li>
+                    <li>Непредусмотренные ошибки </li>
+                </ul>
+            </dd>
+            <h3 class="h3-radius">По возможности избегайте iframe</h3>
+        </dl>      
+    </section>
+
+    <section class="slide right-dl">
+        <img class="left-img"  src="pictures/voice.gif" alt="voice">
+        <dl style="padding-top: 3%;" class="with-block">
+            <dt>
+                ARIA атрибуты
+            </dt>
+            <dd>
+                <ul>
+                    <li>aria−controls </li>
+                    <li>aria−busy</li>
+                    <li>aria−selected </li>
+                    <li>aria−hidden</li>
+                    <li>aria−expanded</li>
+                </ul>
+            </dd>
+        </dl>
+    </section>
+
+    <section class="slide flex-code  no-full">
+        <article class="code-p">
+            <div class="code">
+                <code>
+                    &lt;FormControlLabel <br>
+                    &nbsp; &nbsp; control={&lt;Checkbox <br>
+                    &nbsp; &nbsp; checked={state.checkedA} <br>
+                    &nbsp; &nbsp; onChange={handleChange} <br>
+                    &nbsp; &nbsp; name="checkedA"<br>
+                    &nbsp; &nbsp; />} <br>
+                    &nbsp; label="Secondary"<br>
+                    /> <br>
+                </code>
+            </div>
+            <p>Checkbox c меткой</p>
+        </article>
+        <article class="material">
+            <h1 style="margin-top: 0;">MATERIAL-UI</h1>
+            <img src="pictures/logo-ui.svg" style="width: 60%;">
+            <div>
+                <a href="https://material-ui.com">material-ui.com</a>
+                <a href="https://github.com/mui-org/material-ui">github: mui-org/material-ui</a>
+            </div>
+        </article>
+    </section>
+
+    <section class="slide dis-slide">
+        <dl class="dl-line">
+            <dt>
+                Метки связаны с текстом <img src="pictures/connect.png"/>
+            </dt>
+            <dd class="center-dd code">
+                {
+                    <span class="main-text">text: “Mail”,</span>
+                    <span class="label-text">label: “Сlick to send email, <span class="crossed-text">button</span>”</span>
+                    <span class="comment">// button ставится автоматически (role)</span>
+                }
+                    
+            </dd>
+        </dl>
+    </section>
+
+    <section class="slide full">
+        <div class="screen-advice">
+            <h2 class="shout">SOLID</h2>
+        </div>
+        <img src="pictures/solid.png" alt="">
+    </section>
+
+    <section class="slide dis-slide">
+        <dl>
+            <dt>
+                Single Responsibility Principle
+            </dt>
+            <dd class="solid">
+                Принцип единственной ответственности - обозначает, 
+                что каждый компонент должен иметь одну обязанность. 
+            </dd>
+        </dl>
+    </section>
+
+    <section class="slide dis-slide">
+        <dl>
+            <dt>
+                Open-Closed Principle
+            </dt>
+            <dd class="solid">
+                Принцип открытости-закрытости - декларирует, что компоненты 
+                должны быть открыты для расширения, но закрыты для изменения.  
+            </dd>
+        </dl>
+    </section>
+
+    <section class="slide dis-slide">
+        <dl>
+            <dt>
+                Liskov Substitution Principle 
+            </dt>
+            <dd class="solid">
+                Принцип подстановки Барбары Лисков - может не очень применим в нашей 
+                ситуации, поэтому опустим его. Но если вы сможете 
+                адаптировать его под компонентный подходе будет не плохо. 
+            </dd>
+        </dl>
+    </section>
+
+    <section class="slide dis-slide">
+        <dl>
+            <dt>
+                Interface Segregation Principle 
+            </dt>
+            <dd class="solid">
+                Принцип разделения интерфейса - в формулировке Роберта Мартина: 
+                «клиенты не должны зависеть от методов, которые они не используют». 
+                То есть чекбоксы не должны зависеть от радиокнопок и так далее.
+            </dd>
+        </dl>
+    </section>
+
+    <section class="slide dis-slide">
+        <dl>
+            <dt>
+                Dependency Inversion Principle 
+            </dt>
+            <dd class="solid">
+                Принцип инверсии зависимостей - тоже за уши можно притянуть модули 
+                верхних уровней не должны зависеть от модулей нижних уровней, а 
+                оба типа модулей должны зависеть от абстракций; сами абстракции не должны зависеть 
+                от деталей, а вот детали должны зависеть от абстракций. 
+            </dd>
+        </dl>
+    </section>
+
+    <section class="slide right-dl">
+        <img class="left-img-d" src="pictures/beter.jpg" alt="beter">
+        <dl>
+            <dt class="main-dt">
+                Постоянное совершенствование  
+            </dt>
+            <dd>
+                <q>Не бойтесь совершенства. Вам его не достичь. Тем более, что в совершенстве нет ничего хорошего.</q> <br>
+                <p class="copy-p">&copy; Сальвадор Дали </p>
+            </dd>
+        </dl>
+    </section>
+
+    <section class="slide full">
+        <div class="next screen-advice">
+            <h2 class="shout">Ищите вдохновение</h2>
+        </div>
+        <img src="pictures/pl.jpg" alt="mess">
+    </section>
+
+    <section class="slide full">
+        <div class="next screen-advice">
+            <h2 class="shout">Избегайте избыточности</h2>
+        </div>
+        <img src="pictures/mess.jpeg" alt="mess">
+    </section>
+
+    <section class="slide full">
+        <img style="width: 100%;" src="pictures/read.gif" alt="">
+    </section>
+
+    <section class="slide full right-dl">
+        <img style="height: 100%; margin: 0;" src="pictures/peop.jpg" alt="all-peop">
+        <div class="right-block">
+            <h2 style="margin: 5rem 0 0; text-align: center; font-size: 3rem;">WCAG  </h2>
+            <h2 style="margin: 2rem 0 3rem; text-align: center; font-size: 1.7rem; font-weight: 300;">Web Content Accessibility Guidelines</h2>
+            <div class="arrow-8"></div>
+            <h4 style="margin-top: 4rem;">
+                Доступность для всех 
+            </h4>
+            <h4>
+                пользователей
+            </h4>
+        </div>
+    </section>
+
+    <section class="slide full right-dl">
+        <img style="height: 100%; margin: 0;" src="pictures/switch.gif" alt="switch">
+        <dl  class="with-block" style="margin-top: 7%;">
+            <dt>
+                Режим доступности в приложении  
+            </dt>
+            <dd style="margin-bottom: 10%;">
+                <ul>
+                    <li>довольно трудоемкое решение</li>
+                    <li>требует много времени и ресурсов</li>
+                    <li>избыточность</li>
+                </ul>
+            </dd>
+            <h3 class="h3-radius">Вынужденая мера!</h3>
+        </dl>      
+    </section>
+
+    <section class="slide centered">
+        <h2 class="shout">Повторяем <img style="width: 5rem;" src="pictures/repeat.png"/></h2>
+        
+    </section>
+
+    <section class="slide full">
+        <img src="pictures/a11y-1.gif" alt="a11y">
+    </section>
+    <section class="slide full">
+        <img src="pictures/a11y-2.gif" alt="a11y">
+    </section>
+    <section class="slide full">
+        <img src="pictures/a11y-3.gif" alt="a11y">
+    </section>
+    <section class="slide full">
+        <img src="pictures/a11y-4.gif" alt="a11y">
+    </section>
+    <section class="slide full">
+        <img src="pictures/a11y-5.gif" alt="a11y">
+    </section>
+    <section class="slide full">
+        <img src="pictures/a11y-6.gif" alt="a11y">
+    </section>
+    <section class="slide full">
+        <img src="pictures/a11y-7.gif" alt="a11y">
+    </section>
+
+    <section class="slide full">
+        <div class="screen-advice">
+            <h2 class="shout">Accessibility Team?</h2>
+        </div>
+        <img src="pictures/a11y.png" alt="a11y">
+    </section>
+
+    <section class="slide full">
+        <div class="next screen-advice">
+            <h2 class="shout">Зовите на собрания</h2>
+        </div>
+        <img src="pictures/meetup.jpg" alt="meetup">
+    </section>
+
+    <section class="slide full">
+        <div class="next screen-advice">
+            <h2 class="shout">Документация</h2>
+        </div>
+        <img src="pictures/docs.jpg" alt="docs">
+    </section>
+    
+    <section class="slide full">
+        <div class="next screen-advice">
+            <h2 class="shout">&nbsp;Даже к дизайнеру&nbsp;</h2>
+        </div>
+        <img src="pictures/diz.jpg" alt="diz">
+    </section>
+
+    <section class="slide centered">
+        <h2 class="shout">Общайтесь 🙃</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="complementary">
+            Говорите о доступности 🏢
+        </h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Спасибо 🏁</h2>
+    </section>
+
+    <footer class="badge">
+        <a href="https://github.com/shower/shower">Сделано в Shower</a>
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="highlight/index.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="showerJS/shower.min.js"></script>
+    <script src="myscript.js"></script>
+    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+
+</body>
+
+</html>
