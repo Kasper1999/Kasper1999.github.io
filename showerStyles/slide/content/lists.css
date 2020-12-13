@@ -43,6 +43,11 @@
     content: '—';
 }
 
+.slide .aria ul > li:lang(ru)::before {
+    color:  rgb(255, 127, 0);
+    content: '➡';
+}
+
 /* Custom */
 
 .slide ol > li[value]::before {
